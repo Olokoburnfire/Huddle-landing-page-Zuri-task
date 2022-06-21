@@ -307,10 +307,15 @@ footer .footer_icons{
     justify-content: center;
     font-size:12px
 }
-/* footer .footer_icons .icons{
-
+footer .footer_icons .icons{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
 }
-*/
+footer .footer_icons .icons a .fb :hover{
+    background-image: url(./images/facebook-pink.png);
+}
+
 
 @media screen and (min-width: 880px){
     .top_page {
@@ -373,6 +378,10 @@ footer .footer_icons{
         grid-template-columns: [item_1] 0.65fr [item_2] auto;
         gap: 1em;
         color: hsl(0, 0, 100%);
+    }
+    footer .footer_container .footer_item_1 svg{
+        width: 100%;
+        height: auto;
     }
     footer .footer_container .footer_item_2 {
         display: grid;
